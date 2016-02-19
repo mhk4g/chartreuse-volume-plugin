@@ -19,7 +19,7 @@ Mu45effectAudioProcessor::Mu45effectAudioProcessor()
     volumeParam = new PluginParameter("volume",     // parameterId
                                       0.0,        // actualDefaultValue
                                       -96.0,        // actualMinimum
-                                      6.0,      // actualMaximum
+                                      10.0,      // actualMaximum
                                       "Volume",   // parameterName
                                       "dB"); // parameterLabel, can also be String::empty
     addParameter(volumeParam); // Add the param to a list that the Processor keeps.
@@ -29,7 +29,7 @@ Mu45effectAudioProcessor::Mu45effectAudioProcessor()
                                       -50.0,        // actualMinimum
                                       50.0,      // actualMaximum
                                       "Balance",   // parameterName
-                                      "!!!"); // parameterLabel, can also be String::empty
+                                      ""); // parameterLabel, can also be String::empty
     addParameter(balanceParam); // Add the param to a list that the Processor keeps.
     
 }
